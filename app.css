@@ -68,7 +68,7 @@ body{
 /* ---- Animaciones del header --------- */
 .entrada{
     animation-name: entrada;
-    animation-duration: .3s;
+    animation-duration: .8s;
     animation-timing-function: ease-in-out;
 }
 @keyframes entrada{
@@ -81,7 +81,7 @@ body{
 
 .entrada_2{
     animation-name: entrada_2;
-    animation-duration: .5s;
+    animation-duration: .8s;
     animation-timing-function: ease-in-out;
 }
 @keyframes entrada_2{
@@ -92,7 +92,7 @@ body{
 
 .entrada_3{
     animation-name: entrada_3;
-    animation-duration: .4s;
+    animation-duration: .7s;
     animation-timing-function: ease-in-out;
 }
 @keyframes entrada_3{
@@ -105,7 +105,7 @@ body{
 
 .entrada_4{
     animation-name: entrada_4;
-    animation-duration: .4s;
+    animation-duration: .8s;
     animation-timing-function: ease-in-out;
 }
 @keyframes entrada_4{
@@ -116,7 +116,7 @@ body{
 
 .entrada_5{
     animation-name: entrada_5;
-    animation-duration: .6s;
+    animation-duration: .9s;
     animation-timing-function: ease-in-out;
 }
 @keyframes entrada_5{
