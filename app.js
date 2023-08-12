@@ -38,7 +38,7 @@ function elementoPlato(plato) {
     platoDiv.addEventListener('click', () => {
 
         const mensaje = `Hola, me interesa el plato ${plato.nombre} y quiero pedirlo a domicilio`
-        const telefono = "573228458059";
+        const telefono = "573178864154";
         const url = "https://wa.me/" + telefono + "?text=" + encodeURIComponent(mensaje);
 
         window.open(url, "_blank");
@@ -72,7 +72,7 @@ formulario.addEventListener('submit', (e) => {
     const comentarios = document.getElementById('comentarios').value;
 
     const mensaje = `Hola, mi nombre es ${nombre} y quiero hacer una reservación, mi numero es ${telefonocliente}. ${comentarios}`
-    const telefono = "573228458059";
+    const telefono = "573178864154";
     const url = "https://wa.me/" + telefono + "?text=" + encodeURIComponent(mensaje);
 
     window.open(url, "_blank");

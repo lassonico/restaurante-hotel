@@ -13,8 +13,8 @@ body{
 .encabezado-superior{
     position: relative;
     background-image:
-    linear-gradient(to bottom, #813102c7, #813102c7),
-    url('img/hotel-img.jpg');
+    linear-gradient(to bottom, #572204d8, #572204d8),
+    url('img/fachada.jpg');
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center center;
@@ -250,7 +250,7 @@ body{
     flex-direction: column;
     align-items: center;
     width: 90%;
-    margin: 10rem auto 2rem auto;
+    margin: 7rem auto 2rem auto;
     gap: 1.5rem;
 }
 
