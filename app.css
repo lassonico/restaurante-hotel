@@ -34,8 +34,14 @@ body{
 
 .contenedor-textos .logotipo{
     display: block;
-    width: 150px;
+    width: 110px;
     margin: 0;
+}
+
+@media (min-width: 768px){
+    .contenedor-textos .logotipo{
+        width: 150px;  
+    }
 }
 .contenedor-textos{
     display: flex;
@@ -43,7 +49,7 @@ body{
     align-items: center;
     gap: 2rem;
     color: #fff;
-    margin: -7rem auto 0 auto;
+    margin: 0 auto;
 }
 .contenedor-textos p{
     font-weight: 400;
