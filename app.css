@@ -1,4 +1,5 @@
-@import url('https://fonts.googleapis.com/css2?family=Great+Vibes&family=Leckerli+One&family=Montserrat:wght@200;400;600;700;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300;400;900&family=Montserrat:wght@600&family=Poppins:wght@200;300;400;700&display=swap');
+
 *,*::before,*::after{
     margin: 0;
     padding: 0;
@@ -6,7 +7,7 @@
 }
 
 body{
-    font-family: 'Montserrat', sans-serif;
+    font-family: 'Poppins', sans-serif;
 }
 
 .encabezado-superior{
@@ -51,7 +52,15 @@ body{
     color: #fff;
     margin: 0 auto;
 }
+
+@media (min-width: 768px){
+    .contenedor-textos{
+        margin-top: -3rem;
+    }
+}
+
 .contenedor-textos p{
+    font-family: 'Lato', sans-serif;
     font-weight: 400;
     font-size: 1.3rem;
     text-align: center;
@@ -119,6 +128,8 @@ body{
 /* ---- fin Animaciones del header --------- */
 
 .contenedor-textos h1{
+    font-family: 'Lato', sans-serif;
+    font-weight: 900;
     font-size: 2rem;
     text-align: center;
     overflow: hidden;
@@ -131,13 +142,14 @@ body{
     }
 }
 .contenedor-textos a{
+    font-family: 'Poppins', sans-serif;
     text-decoration: none;
     color: #fff;
     font-size: 2rem;
-    font-weight: 500;
+    font-weight: 400;
     border: 4px solid #ffcc00;
-    padding: .5rem 1.2rem;
-    border-radius: 30px;
+    padding: .3rem 1.7rem;
+    border-radius: 40px;
 }
 
 .contenedor-textos img{
@@ -178,15 +190,17 @@ body{
     .seccion-antojos{
         width: 70%;
         padding: 1.5rem;
-        bottom: -6rem;
+        bottom: -7rem;
     }
 }
 
 .seccion-antojos h3{
+    font-family: 'Lato', sans-serif;
     color: #c95818;
     text-align: center;
     margin-bottom: .5rem;
     font-size: .8rem;
+    font-weight: 800;
     text-transform: uppercase;
 }
 
@@ -213,19 +227,9 @@ body{
     }
 }
 
-.img-text{
-    display: flex;
-    align-items: center;
-}
-
-.img-text .platos-especiales{
-    display: block;
-    width: 50%;
-    margin: 0 auto;
-}
-
-.img-text p{
-    font-weight: 800;
+.contenedor-img-antojos p{
+    font-family: 'Poppins', sans-serif;
+    font-weight: 700;
     font-size: 9px;
     color: #c95818;
     text-align: center;
@@ -233,7 +237,7 @@ body{
 
 
 @media (min-width: 768px){
-    .img-text p{
+    .contenedor-img-antojos p{
         margin-left: 1.2rem;
         font-size: 16px;
     }
@@ -253,11 +257,12 @@ body{
 @media (min-width: 768px){
     .contenedor-deleite{
         width: 60%;
-        margin: 12rem auto 5rem auto;
+        margin: 12rem auto 2rem auto;
     }
 }
 .contenedor-deleite h2{
     font-size: 1.5rem;
+    font-family: 'Poppins', sans-serif;
     font-weight: 200;
     color: gray;
     text-align: center;
@@ -283,6 +288,8 @@ body{
     font-size: 1.5rem;
 }
 .contenedor-deleite p{
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400;
     color: #c95818;
     text-align: center;
     font-size: 1rem;
@@ -291,13 +298,8 @@ body{
 
 @media (min-width: 768px){
     .contenedor-deleite p{
-        font-size: 1.2rem;
+        font-size: 1.3rem;
     }
-}
-
-.contenedor-deleite .sason{
-    font-family: 'Great Vibes', cursive;
-    font-size: 5rem;
 }
 
 /* seccion galeria de platos */
@@ -417,8 +419,8 @@ body{
 }
 
 .titulo-plato{
-    font-weight: 500;
-    font-size: 18px;
+    font-weight: 200;
+    font-size: 20px;
     color: #4e4e4e;
 }
 .textos-card{
@@ -484,7 +486,7 @@ body{
 @media (min-width: 768px){
     .formulario{
         position: absolute;
-        bottom: 0;
+        bottom: 3rem;
         left: 5rem;
         right: 0;   
         width: 1000px;
@@ -517,26 +519,30 @@ body{
     }
 }
 
-.contenedor-reservas h2{
-    text-align: center;
-    margin: 2rem 0;
-    color: #fff;
-    z-index: 10;
-    font-family: 'Leckerli One', cursive;
-    font-size: 2.3rem;
+.texto-caramel{
+    width: 80%;
+    display: block;
+    margin: 0 auto;
 }
+
 .contenedor-reservas p{
     color: #fff;
     margin: 2rem 0 0 0;
     text-align: center;
-    font-weight: 400;
+    font-weight: 300;
     font-size: 1.2rem;
 }
 @media (min-width: 768px){
+
+    .texto-caramel{
+        width: 50%;
+        display: block;
+        margin: 0 20% 0 auto;
+    }
     .contenedor-reservas p{
         width: 50%;
         display: block;
-        font-weight: 200;
+        font-weight: 300;
         margin: 2rem 16rem 0 auto;
         z-index: 10;
     }
@@ -564,6 +570,7 @@ body{
     }
 }
 form label{
+    font-family: 'Poppins', sans-serif;
     margin-bottom: 7px;
     text-align: center;
     font-size: 15px;
@@ -574,7 +581,6 @@ form label{
 @media (min-width: 768px){
     form label{
         font-size: 1.5rem;
-        font-weight: 500;
     }
 }
 
@@ -607,7 +613,7 @@ form label{
 
 .seccion-input input,
 .contenedor-textarea textarea{
-    font-family: 'Montserrat', sans-serif;
+    font-family: 'Poppins', sans-serif;
     border: none;
     padding: .9rem;
     border-radius: 3px;
@@ -647,6 +653,7 @@ form label{
 }
 
 .contenedor-textarea label{
+    font-family: 'Poppins', sans-serif;
     display: block;
     margin: 0 14% 10px 0;
 }
