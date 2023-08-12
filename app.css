@@ -18,13 +18,20 @@ body{
     background-size: cover;
     background-position: center center;
     width: 100%;
-    height: 96vh;
+    height: 70vh;
     display: flex;
     justify-content: center;
     align-items: center;
     padding: 0 10px;
     z-index: 0;
 }
+
+@media (min-width: 768px){
+    .encabezado-superior{
+        height: 96vh;   
+    }
+}
+
 .contenedor-textos .logotipo{
     display: block;
     width: 150px;
@@ -43,21 +50,72 @@ body{
     font-size: 1.3rem;
     text-align: center;
 }
-
+/* ---- Animaciones del header --------- */
 .entrada{
     animation-name: entrada;
-    animation-duration: 1s;
+    animation-duration: .3s;
     animation-timing-function: ease-in-out;
 }
 @keyframes entrada{
+    0%{opacity: 0; transform: scale(0);}
+    30%{opacity: 0; transform: scale(0);}
+    60%{opacity: 1; transform: scale(1.3)}
+    80%{opacity: 1; transform: scale(.9)}
+    100%{opacity: 1;transform: scale(1);}
+}
+
+.entrada_2{
+    animation-name: entrada_2;
+    animation-duration: .5s;
+    animation-timing-function: ease-in-out;
+}
+@keyframes entrada_2{
+    0%{opacity: 0; transform: translateY(80px);}
+    60%{opacity: 0;}
+    100%{opacity: 1;transform: translateY(0px);}
+}
+
+.entrada_3{
+    animation-name: entrada_3;
+    animation-duration: .4s;
+    animation-timing-function: ease-in-out;
+}
+@keyframes entrada_3{
+    0%{opacity: 0; transform: scale(0);}
+    30%{opacity: 0; transform: scale(0);}
+    60%{opacity: 1; transform: scale(1.3)}
+    80%{opacity: 1; transform: scale(.9)}
+    100%{opacity: 1;transform: scale(1);}
+}
+
+.entrada_4{
+    animation-name: entrada_4;
+    animation-duration: .4s;
+    animation-timing-function: ease-in-out;
+}
+@keyframes entrada_4{
     0%{opacity: 0; transform: translateY(-60px);}
     60%{opacity: 0;}
     100%{opacity: 1;transform: translateY(0px);}
 }
 
+.entrada_5{
+    animation-name: entrada_5;
+    animation-duration: .6s;
+    animation-timing-function: ease-in-out;
+}
+@keyframes entrada_5{
+    0%{opacity: 0; transform: translateY(-60px);}
+    60%{opacity: 0;}
+    100%{opacity: 1;transform: translateY(0px);}
+}
+
+/* ---- fin Animaciones del header --------- */
+
 .contenedor-textos h1{
     font-size: 2rem;
     text-align: center;
+    overflow: hidden;
 }
 
 @media (min-width: 768px){
@@ -97,95 +155,72 @@ body{
 /* Seccion de antojos */
 
 .seccion-antojos{
+    display: flex;
+    flex-direction: column;
     position: absolute;
-    bottom: -9rem;
+    bottom: -2.5rem;
     left: 0;
     right: 0;
-    width: 87%;
+    width: 90%;
     background-color: #ffcc00;
-    padding: 1.5rem;
+    padding: .8rem;
     margin: 0 auto;
     z-index: 1;
-    border-radius: 20px;
-}
-.contenido-ordenado{
-    display: flex;
-    width: 100%;
-    gap: 2rem;
 }
 
 @media (min-width: 768px){
     .seccion-antojos{
-        position: absolute;
-        bottom: -6rem;
-        left: 0;
-        right: 0;
         width: 70%;
-        border-radius: 0;
-    }
-    .contenido-ordenado{
-        flex-direction: row;
+        padding: 1.5rem;
+        bottom: -6rem;
     }
 }
+
 .seccion-antojos h3{
-    text-align: center;
     color: #c95818;
-    font-size: 1.1rem;
-    font-weight: 800;
+    text-align: center;
+    margin-bottom: .5rem;
+    font-size: .8rem;
     text-transform: uppercase;
-    margin: 0;
+}
+
+@media (min-width: 768px){
+    .seccion-antojos h3{
+        font-size: 1.8rem;
+        margin-bottom: 1rem;
+    }
 }
 
 .contenedor-img-antojos{
     display: flex;
-    flex-direction: column;
     justify-content: space-evenly;
     align-items: center;
-    gap: 1rem;
-    margin-top: 1rem;
 }
 
-@media (min-width: 768px){
-    .contenedor-img-antojos{
-        flex-direction: row;
-        justify-content: space-around;
-    }
-}
 .contenedor-img-antojos img{
-    display: block;
-    width: 70px;
-    margin: 0 auto;
-}
-
-.img-text{
-    display: flex;
-    flex-direction: column;
-    gap: .3rem;
-    margin: 0 auto;
-}
-
-.img-text .img-pollo{
-    display: block;
-    margin: 0 auto;
+    width: 37px;
 }
 
 @media (min-width: 768px){
     .contenedor-img-antojos img{
         width: 100px;
     }
-    .img-text{
-        flex-direction: row;
-        align-items: center;
-        gap: .2rem;
-        margin-top: 1rem;
-    }
-    .img-text .text-adicional{
-        display: none;
-    }
 }
+
+.img-text{
+    display: flex;
+    align-items: center;
+}
+
+.img-text .platos-especiales{
+    display: block;
+    width: 50%;
+    margin: 0 auto;
+}
+
 .img-text p{
     font-weight: 800;
-    font-size: 16px;
+    font-size: 9px;
     color: #c95818;
     text-align: center;
 }
@@ -194,10 +229,7 @@ body{
 @media (min-width: 768px){
     .img-text p{
         margin-left: 1.2rem;
-    }
-    .img-text .platos-especiales{
-        width: 100px;
-        text-align: center;
+        font-size: 16px;
     }
 }
 
@@ -208,7 +240,7 @@ body{
     flex-direction: column;
     align-items: center;
     width: 90%;
-    margin: 14rem auto 4rem auto;
+    margin: 10rem auto 2rem auto;
     gap: 1.5rem;
 }
 
@@ -228,11 +260,16 @@ body{
 .contenedor-deleite img{
     margin-top: -5rem;
     display: block;
+    width: 70%;
 }
 
 @media (min-width: 768px){
     .contenedor-deleite h2{
         font-size: 2.3rem;
+    }
+
+    .contenedor-deleite img{
+        width: 35%;
     }
 }
 .contenedor-deleite .sason{
@@ -242,8 +279,14 @@ body{
 .contenedor-deleite p{
     color: #c95818;
     text-align: center;
-    font-size: 1.2rem;
+    font-size: 1rem;
     font-weight: 500;
+}
+
+@media (min-width: 768px){
+    .contenedor-deleite p{
+        font-size: 1.2rem;
+    }
 }
 
 .contenedor-deleite .sason{
@@ -252,6 +295,68 @@ body{
 }
 
 /* seccion galeria de platos */
+
+
+/* Animaciones cards */
+
+.card {
+    width: 190px;
+    height: 254px;
+    border-radius: 20px;
+    background: #f5f5f5;
+    position: relative;
+    padding: 1.8rem;
+    border: 2px solid #c3c6ce;
+    transition: 0.5s ease-out;
+    overflow: visible;
+   }
+   
+   .card-details {
+    color: black;
+    height: 100%;
+    gap: .5em;
+    display: grid;
+    place-content: center;
+   }
+   
+   .card-button {
+    transform: translate(-50%, 125%);
+    width: 60%;
+    border-radius: 1rem;
+    border: none;
+    background-color: #008bf8;
+    color: #fff;
+    font-size: 1rem;
+    padding: .5rem 1rem;
+    position: absolute;
+    left: 50%;
+    bottom: 0;
+    opacity: 0;
+    transition: 0.3s ease-out;
+   }
+   
+   .text-body {
+    color: rgb(134, 134, 134);
+   }
+   
+   /*Text*/
+   .text-title {
+    font-size: 1.5em;
+    font-weight: bold;
+   }
+   
+   /*Hover*/
+   .card:hover {
+    border-color: #008bf8;
+    box-shadow: 0 4px 18px 0 rgba(0, 0, 0, 0.25);
+   }
+   
+   .card:hover .card-button {
+    transform: translate(-50%, 50%);
+    opacity: 1;
+   }
+
+/* Animaciones cards */
 
 .contenedor-main{
     display: block;
@@ -345,18 +450,10 @@ body{
     background-size: cover;
     background-position: center center;
     width: 100%;
-    height: 90vh;
+    height: 80vh;
     padding: 2rem 10px;
     margin-top: .2rem;
     overflow: hidden;
-}
-.contenedor-reservas .flecha{
-    width: 40px;
-    position: absolute;
-    top: -1rem;
-    left: 0;
-    right: 0;
-    margin: 0 auto;
 }
 
 @media (min-width: 768px){
@@ -364,15 +461,13 @@ body{
         height: 170vh;
         padding: 8rem 2rem;
     }
-    .contenedor-reservas .flecha{
-        display: none;
-    }
 }
 
 .formulario{
     background-color: #ffcc00;
     position: absolute;
-    top: 4rem;
+    top: 0;
+    bottom: 0;
     right: 0;
     left: 0;
     width: 94%;
@@ -455,7 +550,7 @@ body{
     position: relative;
     z-index: 10;
     width: 100%;
-    padding: 0 10px;
+    padding: 0 1.5rem;
     margin-top: 2rem;
 }
 
@@ -470,14 +565,14 @@ body{
 form label{
     margin-bottom: 7px;
     text-align: center;
-    font-size: 17px;
+    font-size: 15px;
     color: #611a00;
     font-weight: 400;
 }
 
 @media (min-width: 768px){
     form label{
-        font-size: 1.8rem;
+        font-size: 1.5rem;
         font-weight: 500;
     }
 }
@@ -493,7 +588,7 @@ form label{
 .contenedor-textarea{
     display: flex;
     flex-direction: column;
-    align-items: center;
+    align-items: flex-end;
     margin: 1rem auto;
 }
 
@@ -514,26 +609,30 @@ form label{
     font-family: 'Montserrat', sans-serif;
     border: none;
     padding: .9rem;
-    border-radius: 12px;
+    border-radius: 3px;
     width: 100%;
     outline: none;
 }
 
 .seccion-input input{
-    width: 90%;
+    width: 100%;
     margin: 0 auto;
-    padding: .5rem;
+    padding: .5rem 0;
     font-size: 1.2rem;
 }
 
 .contenedor-textarea textarea{
-    max-width: 200px;
+    max-width: 250px;
     min-width: 200px;
     min-height: 70px;
     font-size: 1.2rem;
 }
 
 @media (min-width: 768px){
+    .contenedor-input input{
+        border-radius: 12px;
+        padding-left: 10px;
+    }
     .contenedor-textarea textarea{
         display: block;
         max-width: 350px;
@@ -542,12 +641,13 @@ form label{
         width: 100%;
         height: 120px;
         font-size: 1.7rem;
+        border-radius: 12px;
     }
 }
 
 .contenedor-textarea label{
     display: block;
-    margin: 0 1.5rem 10px 0;
+    margin: 0 14% 10px 0;
 }
 
 form button{
@@ -573,6 +673,9 @@ form button{
         padding: .7rem 3rem;
         font-weight: 700;
     }
+    .contenedor-textarea label{
+        margin: 0 20% 10px 0;
+    }
 }
 
 .img-vegetales{
@@ -586,22 +689,17 @@ form button{
     object-position: center center;
     z-index: 1;
 }
-
+@media (min-width: 420px){
+    .img-vegetales{
+        display: none;
+    }
+}
 @media (min-width: 768px){
     .img-vegetales{
+        display: block;
         bottom: -27rem;
         right: -12rem;
         width: 150%;
         z-index: 2;
     }
 }
-
-/* .logotipo-footer{
-    display: block;
-    position: absolute;
-    bottom: -4rem;
-    left: 0;
-    right: 0;
-    width: 60px;
-    margin: 3rem auto;
-} */
