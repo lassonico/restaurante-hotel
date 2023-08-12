@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Restaurante y hotel</title>
+    <link rel="stylesheet" href="app.css">
+</head>
+<body>
+        <header class="encabezado-superior">
+
+            <div class="contenedor-textos entrada">
+                <img src="img/logo3.png" class="logotipo" alt="logotipo del restaurante">
+                <h1 class="title">Restaurante y hotel</h1>
+                <a href="#reservaciones">Reservaciones</a>
+                <p><img src="img/location-svgrepo-com.svg" alt="icono de ubicacion">Km 7 vía Hobo - Campoalegre Huila</p>
+            </div>
+        </header>
+
+        <section class="seccion-antojos">
+            <h3>¿Y vos de qué estás antojado hoy?</h3>
+            <div class="contenedor-img-antojos">
+                <div class="contenido-ordenado">
+                    <div class="img-text">
+                        <img src="img/tipicos.png" alt="imagen icono platos tipico">
+                        <p>Típicos</p>
+                    </div>
+                    <div class="img-text">
+                        <img src="img/desayunos.png" alt="imagen icono platos tipico">
+                        <p>desayunos</p>
+                    </div>
+                </div>
+                <div class="contenido-ordenado">
+                    <div class="img-text">
+                        <img src="img/icono-platos-especiales-2.png" alt="imagen icono platos tipico">
+                        <p class="platos-especiales">Platos especiales</p>
+                    </div>
+                    <div class="img-text">
+                        <img src="img/icono-platos-especiales.png" alt="imagen icono platos tipico">
+                        <p class="text-adicional">platos a la carta</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <section class="contenedor-deleite">
+            <h2>Deléitate con nuestra mejor</h2>
+            <img src="img/text-special.png" alt="imagen de texto especial">
+            <p>Lorem ipsum duo nulla minima ullam vero odio corporis eum rerum aspernatur voluptatibus molestias, quod iure iste voluptatibus molestias, quod iure iste</p>
+        </section>
+        <main class="contenedor-main">
+            <div class="contenedor-platos platos-js" id="menu"></div>
+        </main>
+        <section class="contenedor-reservas" id="reservaciones">
+            <img src="img/down-arrow.svg" alt="icono flecha" class="flecha">
+            <h2>Haz yá tu reserva</h2>
+            <p>En unos 2 minuticos llenás este formulario para que podamos regristrar tu reserva correctamente, aquí te esperamos con el mejor sabor huilense.</p>
+            <div class="contenedor-formulario">
+                <div class="formulario">
+                    <img src="img/chef-web-form-copy.png" class="img-chef" alt="imagen de chef">
+                    <form autocomplete="off" id="formdatos">
+                        <div class="seccion-input">
+                            <div class="contenedor-input">
+                                <label for="nombre">Nombre completo</label>
+                                <input type="text" name="nombre" id="nombre" required>
+                            </div>
+                            <div class="contenedor-input">
+                                <label for="telefono">Teléfono</label>
+                                <input type="text" inputmode="numeric" name="telefono" id="telefono" required>
+                            </div>
+                        </div>
+                        <div class="contenedor-textarea">
+                            <label for="comentarios">Informacion adicional</label>
+                            <textarea name="comentarios" id="comentarios"></textarea>
+                        </div>
+                        <button type="submit">reservar</button>
+                    </form>
+                    <img src="img/vegetales-webl-form.png" alt="imagen de vegetales" class="img-vegetales">
+                </div>
+            </div>
+            <!-- <img src="img/logo.png" alt="logotipo footer" class="logotipo-footer"> -->
+        </section>
+
+    <script src="app.js" type="module"></script>
+</body>
+</html> 

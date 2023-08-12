@@ -1,0 +1,607 @@
+@import url('https://fonts.googleapis.com/css2?family=Great+Vibes&family=Leckerli+One&family=Montserrat:wght@200;400;600;700;800&display=swap');
+*,*::before,*::after{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Montserrat', sans-serif;
+}
+
+.encabezado-superior{
+    position: relative;
+    background-image:
+    linear-gradient(to bottom, #813102c7, #813102c7),
+    url('img/hotel-img.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    width: 100%;
+    height: 96vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0 10px;
+    z-index: 0;
+}
+.contenedor-textos .logotipo{
+    display: block;
+    width: 150px;
+    margin: 0;
+}
+.contenedor-textos{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+    color: #fff;
+    margin: -12rem auto 0 auto;
+}
+.contenedor-textos p{
+    font-weight: 400;
+    font-size: 1.3rem;
+    text-align: center;
+}
+
+.entrada{
+    animation-name: entrada;
+    animation-duration: 1s;
+    animation-timing-function: ease-in-out;
+}
+@keyframes entrada{
+    0%{opacity: 0; transform: translateY(-60px);}
+    60%{opacity: 0;}
+    100%{opacity: 1;transform: translateY(0px);}
+}
+
+.contenedor-textos h1{
+    font-size: 2rem;
+    text-align: center;
+}
+
+@media (min-width: 768px){
+    .contenedor-textos h1{
+        font-size: 4rem; 
+        margin-top: -2rem;  
+    }
+}
+.contenedor-textos a{
+    text-decoration: none;
+    color: #fff;
+    font-size: 2rem;
+    font-weight: 500;
+    border: 4px solid #ffcc00;
+    padding: .5rem 1.2rem;
+    border-radius: 30px;
+}
+
+.contenedor-textos img{
+    width: 17px;
+}
+
+@media (min-width: 768px){
+    .contenedor-textos a{
+        font-size: 2.5rem;
+        border-radius: 35px;
+    }
+    .contenedor-textos img{
+        width: 34px;
+    }
+    
+    .contenedor-textos p{
+        font-size: 2rem;
+    }
+}
+
+/* Seccion de antojos */
+
+.seccion-antojos{
+    position: absolute;
+    bottom: -7rem;
+    left: 0;
+    right: 0;
+    width: 87%;
+    background-color: #ffcc00;
+    padding: 1.5rem;
+    margin: 0 auto;
+    z-index: 1;
+    border-radius: 20px;
+}
+.contenido-ordenado{
+    display: flex;
+    width: 100%;
+    gap: 2rem;
+}
+
+@media (min-width: 768px){
+    .seccion-antojos{
+        position: absolute;
+        bottom: -6rem;
+        left: 0;
+        right: 0;
+        width: 70%;
+        border-radius: 0;
+    }
+    .contenido-ordenado{
+        flex-direction: row;
+    }
+}
+.seccion-antojos h3{
+    text-align: center;
+    color: #c95818;
+    font-size: 1.1rem;
+    font-weight: 800;
+    text-transform: uppercase;
+    margin: 0;
+}
+
+.contenedor-img-antojos{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    gap: 1rem;
+    margin-top: 1rem;
+}
+
+@media (min-width: 768px){
+    .contenedor-img-antojos{
+        flex-direction: row;
+        justify-content: space-around;
+    }
+}
+.contenedor-img-antojos img{
+    display: block;
+    width: 70px;
+    margin: 0 auto;
+}
+
+.img-text{
+    display: flex;
+    flex-direction: column;
+    gap: .3rem;
+    margin: 0 auto;
+}
+
+.img-text .img-pollo{
+    display: block;
+    margin: 0 auto;
+}
+
+@media (min-width: 768px){
+    .contenedor-img-antojos img{
+        width: 100px;
+    }
+    .img-text{
+        flex-direction: row;
+        align-items: center;
+        gap: .2rem;
+        margin-top: 1rem;
+    }
+    .img-text .text-adicional{
+        display: none;
+    }
+}
+.img-text p{
+    font-weight: 800;
+    font-size: 16px;
+    color: #c95818;
+    text-align: center;
+}
+
+
+@media (min-width: 768px){
+    .img-text p{
+        margin-left: 1.2rem;
+    }
+    .img-text .platos-especiales{
+        width: 100px;
+        text-align: center;
+    }
+}
+
+/* Seccion deleitate */
+
+.contenedor-deleite{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 90%;
+    margin: 14rem auto 4rem auto;
+    gap: 1.5rem;
+}
+
+@media (min-width: 768px){
+    .contenedor-deleite{
+        width: 60%;
+        margin: 12rem auto 5rem auto;
+    }
+}
+.contenedor-deleite h2{
+    font-size: 1.5rem;
+    font-weight: 200;
+    color: gray;
+    text-align: center;
+}
+
+.contenedor-deleite img{
+    margin-top: -5rem;
+    display: block;
+}
+
+@media (min-width: 768px){
+    .contenedor-deleite h2{
+        font-size: 2.3rem;
+    }
+}
+.contenedor-deleite .sason{
+    font-weight: 600;
+    font-size: 1.5rem;
+}
+.contenedor-deleite p{
+    color: #c95818;
+    text-align: center;
+    font-size: 1.2rem;
+    font-weight: 500;
+}
+
+.contenedor-deleite .sason{
+    font-family: 'Great Vibes', cursive;
+    font-size: 5rem;
+}
+
+/* seccion galeria de platos */
+
+.contenedor-main{
+    display: block;
+    width: 100vw;
+    margin: 0 auto;
+}
+.contenedor-platos{
+    width: 100%;
+    margin: 0 auto;
+    padding: 0;
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    gap: .1rem;
+}
+
+@media (min-width:768px){
+    .contenedor-main{
+        display: block;
+        width: 100%;
+        margin: 0 auto;
+        padding: 0;
+    }
+    .contenedor-platos{
+        width: 100%;
+        grid-template-columns: repeat(4, 1fr);
+        gap: .3rem;
+        margin: 0 auto;
+        padding: 0;
+    }
+}
+.card-plato{
+    margin: 0 auto .7rem auto;
+    padding: 0;
+}
+
+.card-plato img{
+    width: 100%;
+    display: block;
+    margin: 0 auto;
+    transition: all .3s ease-in-out;
+}
+
+.card-plato img:hover{
+    cursor: pointer;
+    filter: brightness(50%)
+}
+
+@media (min-width: 768px){
+    .card-plato img{
+        width: 100%;
+    }
+}
+
+.titulo-plato{
+    font-weight: 500;
+    font-size: 18px;
+    color: #4e4e4e;
+}
+.textos-card{
+    margin-bottom: .8rem;
+}
+
+.format-text{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: .5rem;
+}
+
+.precio{
+    color: red;
+    font-weight: 800;
+    font-size: 20px;
+}
+
+.plato-descripcion{
+    display: block;
+    text-align: center;
+    font-weight: 200;
+    width: 70%;
+    margin: .5rem auto 0 auto;
+}
+
+/* Seccion de contacto reservas */
+
+.contenedor-reservas{
+    position: relative;
+    background-color: #2e2e2e;
+    background-image: url('img/patron-form-textura.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    width: 100%;
+    height: 90vh;
+    padding: 2rem 10px;
+    margin-top: .2rem;
+    overflow: hidden;
+}
+.contenedor-reservas .flecha{
+    width: 40px;
+    position: absolute;
+    top: -1rem;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+}
+
+@media (min-width: 768px){
+    .contenedor-reservas{
+        height: 170vh;
+        padding: 8rem 2rem;
+    }
+    .contenedor-reservas .flecha{
+        display: none;
+    }
+}
+
+.formulario{
+    background-color: #ffcc00;
+    position: absolute;
+    top: 4rem;
+    right: 0;
+    left: 0;
+    width: 94%;
+    height: 360px;
+    margin: 1rem auto 0 auto;
+    border-radius: 10px;
+}
+
+@media (min-width: 768px){
+    .formulario{
+        position: absolute;
+        bottom: 0;
+        left: 5rem;
+        right: 0;   
+        width: 1000px;
+        height: 460px;
+        margin: 1rem auto 0 auto;
+        border-radius: 0;
+        display: flex;
+        align-items: center;
+        justify-content: end;
+    }
+}
+
+.contenedor-reservas .img-chef{
+    width: 180px;
+    position: absolute;
+    left: -39px;
+    bottom: 0;
+    z-index: 10;
+}
+
+@media (min-width: 768px){
+    .contenedor-reservas .img-chef{
+        width: 650px;
+        position: absolute;
+        right: 0;
+        bottom: 0;
+        left: -12rem;
+        bottom: -.2rem;
+        z-index: 1;
+    }
+}
+
+.contenedor-reservas h2{
+    text-align: center;
+    margin: 2rem 0;
+    color: #fff;
+    z-index: 10;
+    font-family: 'Leckerli One', cursive;
+    font-size: 2.3rem;
+}
+.contenedor-reservas p{
+    color: #fff;
+    margin: 2rem 0 0 0;
+    text-align: center;
+    font-weight: 400;
+    font-size: 1.2rem;
+}
+@media (min-width: 768px){
+    .contenedor-reservas p{
+        width: 50%;
+        display: block;
+        font-weight: 200;
+        margin: 2rem 16rem 0 auto;
+        z-index: 10;
+    }
+
+    .contenedor-reservas h2{
+        font-size: 4rem;
+        margin: 4rem auto 0 6rem;
+    }
+}
+
+.contenedor-formulario{
+    position: relative;
+}
+
+.formulario form{
+    position: relative;
+    z-index: 10;
+    width: 100%;
+    padding: 0 10px;
+    margin-top: 2rem;
+}
+
+@media (min-width: 768px){
+    .formulario form{
+        width: 55%;
+        height: 100%;
+        margin-top: 6rem;
+        margin-right: 2rem;
+    }
+}
+form label{
+    margin-bottom: 7px;
+    text-align: center;
+    font-size: 17px;
+    color: #611a00;
+    font-weight: 400;
+}
+
+@media (min-width: 768px){
+    form label{
+        font-size: 1.8rem;
+        font-weight: 500;
+    }
+}
+
+.seccion-input{
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+}
+
+.contenedor-textarea{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 1rem auto;
+}
+
+.contenedor-input{
+    display: flex;
+    flex-direction: column;
+}
+
+@media (min-width: 768px){
+    .contenedor-input{
+        justify-content: space-between;
+        width: 100%;
+    }
+}
+
+.seccion-input input,
+.contenedor-textarea textarea{
+    font-family: 'Montserrat', sans-serif;
+    border: none;
+    padding: .9rem;
+    border-radius: 12px;
+    width: 100%;
+    outline: none;
+}
+
+.seccion-input input{
+    width: 90%;
+    margin: 0 auto;
+    padding: .5rem;
+    font-size: 1.2rem;
+}
+
+.contenedor-textarea textarea{
+    max-width: 200px;
+    min-width: 200px;
+    min-height: 70px;
+    font-size: 1.2rem;
+}
+
+@media (min-width: 768px){
+    .contenedor-textarea textarea{
+        display: block;
+        max-width: 350px;
+        max-height: 160px;
+        min-width: 500px;
+        width: 100%;
+        height: 120px;
+        font-size: 1.7rem;
+    }
+}
+
+.contenedor-textarea label{
+    display: block;
+    margin: 0 1.5rem 10px 0;
+}
+
+form button{
+    display: block;
+    margin: 1rem 0 0 6.5rem;
+    padding: .6rem 2rem;
+    background-color: #681c00;
+    color: #fff;
+    border: none;
+    font-size: 1.3rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    font-family: 'Montserrat', sans-serif;
+    border-radius: 7px;
+    cursor: pointer;
+}
+
+@media (min-width: 768px){
+    form button{
+        margin: 0 auto;
+        font-size: 2.2rem;
+        margin-top: 2rem;
+        padding: .7rem 3rem;
+        font-weight: 700;
+    }
+}
+
+.img-vegetales{
+    display: block;
+    position: absolute;
+    bottom: 0;
+    right: -4rem;
+    width: 160%;
+    transform: rotate(15deg);
+    transform: translateY(-50px);
+    object-position: center center;
+    z-index: 1;
+}
+
+@media (min-width: 768px){
+    .img-vegetales{
+        bottom: -27rem;
+        right: -12rem;
+        width: 150%;
+        z-index: 2;
+    }
+}
+
+/* .logotipo-footer{
+    display: block;
+    position: absolute;
+    bottom: -4rem;
+    left: 0;
+    right: 0;
+    width: 60px;
+    margin: 3rem auto;
+} */
