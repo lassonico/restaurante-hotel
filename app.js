@@ -18,9 +18,11 @@ function elementoPlato(plato) {
     const platoDiv = document.createElement('div');
     platoDiv.classList.add('card-plato');
     platoDiv.innerHTML = `
-    <img src='img/platos/plato_${plato.id}.jpg' alt="imagen de ${plato.nombre}">
+    <div class="contenedor-img-plato">
+        <img src='img/platos/plato_${plato.id}.jpg' alt="imagen de ${plato.nombre}">
+    <div>
     <div class="textos-card">
-        <p class="format-text" ><span class="titulo-plato">${plato.nombre}</span> ......................................... <span class="precio">$${plato.precio}</span></p>
+        <p class="format-text" ><span class="titulo-plato">${plato.nombre}</span><span class="precio">$${plato.precio}</span></p>
         <p class="plato-descripcion">${plato.descripcion}</p>
     </div>
     `
