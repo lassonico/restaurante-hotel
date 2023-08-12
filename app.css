@@ -271,7 +271,7 @@ body{
 .contenedor-deleite img{
     margin-top: -5rem;
     display: block;
-    width: 70%;
+    width: 50%;
 }
 
 @media (min-width: 768px){
