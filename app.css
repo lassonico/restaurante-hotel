@@ -450,7 +450,7 @@ body{
     background-size: cover;
     background-position: center center;
     width: 100%;
-    height: 80vh;
+    height: 70vh;
     padding: 2rem 10px;
     margin-top: .2rem;
     overflow: hidden;
@@ -458,7 +458,7 @@ body{
 
 @media (min-width: 768px){
     .contenedor-reservas{
-        height: 170vh;
+        height: 150vh;
         padding: 8rem 2rem;
     }
 }
@@ -466,13 +466,12 @@ body{
 .formulario{
     background-color: #ffcc00;
     position: absolute;
-    top: 0;
-    bottom: 0;
+    bottom: auto;
     right: 0;
     left: 0;
     width: 94%;
     height: 360px;
-    margin: 1rem auto 0 auto;
+    margin: 2rem auto 0 auto;
     border-radius: 10px;
 }
 
@@ -540,10 +539,6 @@ body{
         font-size: 4rem;
         margin: 4rem auto 0 6rem;
     }
-}
-
-.contenedor-formulario{
-    position: relative;
 }
 
 .formulario form{
@@ -681,10 +676,10 @@ form button{
 .img-vegetales{
     display: block;
     position: absolute;
-    bottom: 0;
+    bottom: 5rem;
     right: -4rem;
-    width: 160%;
-    transform: rotate(15deg);
+    width: 600px;
+    transform: rotate(-15deg);
     transform: translateY(-50px);
     object-position: center center;
     z-index: 1;
@@ -697,7 +692,7 @@ form button{
 @media (min-width: 768px){
     .img-vegetales{
         display: block;
-        bottom: -27rem;
+        bottom: -10rem;
         right: -12rem;
         width: 150%;
         z-index: 2;
