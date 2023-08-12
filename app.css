@@ -266,6 +266,8 @@ body{
     font-weight: 200;
     color: gray;
     text-align: center;
+    display: block;
+    z-index: 10;
 }
 
 .contenedor-deleite img{
