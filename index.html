@@ -6,73 +6,77 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="theme-color" content="#c95818">
     <meta name="description" content="Gran estacion es el restaurante hotel con los mejores platos tipicos y especiales | Un hospedaje agradable para tu estadia">
-    <meta name="author" content="Nicolas Lasso Rodriguez">
+    <meta name="author" content="Markadpublicidad">
     <meta name="keywords" content="restaurante en Hobo, hotel hobo, hospedaje, reservaciones">
     <title>Restaurante y hotel Gran Estacion</title>
     <link rel="stylesheet" href="app.css">
     <link rel="stylesheet" href="normalize.css">
 </head>
 <body>
-        <header class="encabezado-superior">
-            <div class="contenedor-textos">
-                <img src="img/logo3.png" class="logotipo entrada" alt="logotipo del restaurante">
-                <h1 class="title entrada_2">Restaurante y hotel</h1>
-                <a href="#reservaciones" class="entrada_3">Reservaciones</a>
-                <p class="entrada_4"><img src="img/location-svgrepo-com.svg" alt="icono de ubicacion">Km 7 vía Hobo - Campoalegre Huila</p>
-            </div>
+    <header class="encabezado-superior">
+        <div class="contenedor-textos">
+            <img src="img/logo3.png" class="logotipo entrada" alt="logotipo del restaurante">
+            <h1 class="title entrada_2">Restaurante y hotel</h1>
+            <a href="#reservaciones" class="entrada_3">Reservaciones</a>
+            <p class="entrada_4"><img src="img/location-svgrepo-com.svg" alt="icono de ubicacion">Km 7 vía Hobo - Campoalegre Huila</p>
+        </div>
 
-            <section class="seccion-antojos entrada_5">
-                <h3>¿Y vos de qué estás antojado hoy?</h3>
-                <div class="contenedor-img-antojos">
-                    <img src="img/tipicos.png" alt="imagen icono platos tipico">
-                    <p>Típicos</p>
-                    <img src="img/desayunos.png" alt="imagen icono platos tipico">
-                    <p>desayunos</p>
-                    <img src="img/icono-platos-especiales-2.png" alt="imagen icono platos tipico">
-                    <p class="platos-especiales">Especiales</p>
-                    <img src="img/icono-platos-especiales.png" alt="imagen icono platos tipico">
-                    </div> 
-                </div>
-            </section>
-
-        </header>
-        
-        <section class="contenedor-deleite">
-            <h2>Deléitate con nuestra mejor</h2>
-            <img src="img/fuente-sazon.svg" alt="imagen de texto especial">
-            <p>Definitivamente, tienes que venir a probar éstas delicias, para todos los amigo que nos visitan, siempre les damos lo mejor, éstos platos son la muestra de la sazón y el buen gusto que todo viajero puede probar.</p>
-        </section>
-        <main class="contenedor-main">
-            <div class="contenedor-platos platos-js" id="menu"></div>
-        </main>
-        <section class="contenedor-reservas" id="reservaciones">
-            <img class="texto-caramel" src="img/fuente-caramel.svg" alt="texto especial">
-            <p>En unos 2 minuticos llenás este formulario para que podamos regristrar tu reserva correctamente, aquí te esperamos con el mejor sabor huilense.</p>
-            <div class="contenedor-formulario">
-                <div class="formulario">
-                    <img src="img/chef-web-form-copy.png" class="img-chef" alt="imagen de chef">
-                    <form autocomplete="off" id="formdatos">
-                        <div class="seccion-input">
-                            <div class="contenedor-input">
-                                <label for="nombre">Nombre completo</label>
-                                <input type="text" name="nombre" id="nombre" required>
-                            </div>
-                            <div class="contenedor-input">
-                                <label for="telefono">Teléfono</label>
-                                <input type="text" inputmode="numeric" name="telefono" id="telefono" required>
-                            </div>
-                        </div>
-                        <div class="contenedor-textarea">
-                            <label for="comentarios">Informacion adicional</label>
-                            <textarea name="comentarios" id="comentarios"></textarea>
-                        </div>
-                        <button type="submit">reservar</button>
-                    </form>
-                    <img src="img/vegetales-webl-form.png" alt="imagen de vegetales" class="img-vegetales">
-                </div>
+        <section class="seccion-antojos entrada_5">
+            <h3>¿Y vos de qué estás antojado hoy?</h3>
+            <div class="contenedor-img-antojos">
+                <img src="img/tipicos.png" alt="imagen icono platos tipico">
+                <p>Típicos</p>
+                <img src="img/desayunos.png" alt="imagen icono platos tipico">
+                <p>desayunos</p>
+                <img src="img/icono-platos-especiales-2.png" alt="imagen icono platos tipico">
+                <p class="platos-especiales">Especiales</p>
+                <img src="img/icono-platos-especiales.png" alt="imagen icono platos tipico">
+                </div> 
             </div>
-            <!-- <img src="img/logo.png" alt="logotipo footer" class="logotipo-footer"> -->
         </section>
+
+    </header>
+    
+    <section class="contenedor-deleite">
+        <h2>Deléitate con nuestra mejor</h2>
+        <img src="img/fuente-sazon.svg" alt="imagen de texto especial">
+        <p>Definitivamente, tienes que venir a probar éstas delicias, para todos los amigo que nos visitan, siempre les damos lo mejor, éstos platos son la muestra de la sazón y el buen gusto que todo viajero puede probar.</p>
+    </section>
+    <main class="contenedor-main">
+        <div class="contenedor-platos platos-js" id="menu"></div>
+    </main>
+    <div class="contenedor-reservas" id="reservaciones">
+        <img class="texto-caramel" src="img/fuente-caramel.svg" alt="texto especial">
+        <p>En unos 2 minuticos llenás este formulario para que podamos regristrar tu reserva correctamente, aquí te esperamos con el mejor sabor huilense.</p>
+        <div class="formulario">
+            <!-- <img src="img/chef-web-form-copy.png" class="img-chef" alt="imagen de chef"> -->
+            <form autocomplete="off" id="formdatos">
+                <div class="seccion-input">
+                    <div class="contenedor-input">
+                        <label for="nombre">Nombre completo</label>
+                        <input type="text" name="nombre" id="nombre" required>
+                    </div>
+                    <div class="contenedor-input">
+                        <label for="telefono">Teléfono</label>
+                        <input type="text" inputmode="numeric" name="telefono" id="telefono" required>
+                    </div>
+                </div>
+                <div class="contenedor-textarea">
+                    <label for="comentarios">Informacion adicional</label>
+                    <textarea name="comentarios" id="comentarios"></textarea>
+                </div>
+                <button type="submit">reservar</button>
+            </form>
+            <img src="img/vegetales-webl-form.png" alt="imagen de vegetales" class="img-vegetales">
+        </div>
+        <img src="img/chef-web-form-copy.png" class="img-chef" alt="imagen de chef">
+        <!-- <img src="img/logo.png" alt="logotipo footer" class="logotipo-footer"> -->
+    </div>
+
+    <footer>
+        <img src="img/logo3.png" alt="logotipo de la empresa">
+        <p>Todos los derechos reservados &copy;Restaurante Gran Estacion </p>
+    </footer>
 
     <script src="app.js" type="module"></script>
 </body>

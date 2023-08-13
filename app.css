@@ -405,12 +405,16 @@ body{
 .card-plato{
     margin: 0 auto .7rem auto;
     padding: 0;
-}
-.card-plato .contenedor-img-plato{
-    width: auto;
-    height: auto;
     overflow: hidden;
 }
+.card-plato .contenedor-img-plato{
+    position: relative;
+    width: 100%;
+    height: auto;
+    overflow: hidden;
+    transition: all .3s ease-in-out;
+}
+
 .card-plato img{
     width: 100%;
     display: block;
@@ -418,9 +422,40 @@ body{
     transition: all .3s ease-in-out;
 }
 
-.card-plato img:hover{
+.contenedor-img-plato .plato-descripcion{
+    position: absolute;
+    bottom: 20%; 
+    left: 0;
+    right: 0; 
+    opacity: 0; 
+    color: white; 
+    padding: 10px; 
+    text-align: center; 
+    transition: all .3s ease-in-out; 
+    width: 100%;
+}
+
+.plato-descripcion h3{
+    display: block;
+    width: 60%;
+    margin: 0 auto;
+    border-radius: 30px;
+    margin-bottom: 1rem;
+    color: #ffcc00;
+    padding: 10px 30px;
+    border: 1px solid #f5f5f5;
+}
+
+.contenedor-img-plato:hover img:hover{
     cursor: pointer;
-    filter: brightness(50%)
+    filter: brightness(20%);
+}
+
+.contenedor-img-plato:hover .plato-descripcion{
+    opacity: 1;
+    bottom: 30%;
+    left: 0;
+    cursor: pointer;
 }
 
 @media (min-width: 768px){
@@ -451,89 +486,81 @@ body{
     font-size: 20px;
 }
 
-.plato-descripcion{
-    display: block;
-    text-align: center;
-    font-weight: 200;
-    width: 70%;
-    margin: .5rem auto 0 auto;
-}
-
-/* Seccion de contacto reservas */
+/* ------ Seccion de contacto reservas -------- */
 
 .contenedor-reservas{
     position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
     background-color: #2e2e2e;
     background-image: url('img/patron-form-textura.png');
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center center;
     width: 100%;
-    height: 70vh;
-    padding: 1rem 1rem;
+    padding: 2rem 1rem;
     margin-top: .2rem;
     overflow: hidden;
 }
 
 @media (min-width: 768px){
     .contenedor-reservas{
-        height: 150vh;
-        padding: 8rem 2rem;
+        padding: 10rem 2rem 5rem 2rem;
     }
 }
 
-@media (min-width:1250px){
-    .contenedor-reservas{
-        height: 135vh;
-    }
-}
-
-.formulario{
+.contenedor-reservas .formulario{
+    display: flex;
+    align-items: center;
     background-color: #ffcc00;
-    position: absolute;
-    bottom: auto;
-    right: 0;
-    left: 0;
-    width: 94%;
+    width: 100%;
     height: auto;
-    margin: 2rem auto 0 auto;
     padding: 1rem;
-    border-radius: 10px;
+    margin: 0 auto;
+    justify-content: center;
+    margin: 2rem auto;
+    padding: 3rem 1rem;
+    border-radius: 15px;
+}
+
+.formulario form{
+    width: 100%;
+    margin-bottom: 1rem;
+    z-index: 10;
 }
 
 @media (min-width: 768px){
-    .formulario{
-        position: absolute;
-        bottom: 1rem;
-        left: 5rem;
-        right: 0;   
-        width: 72%;
-        margin: 1rem auto 0 auto;
-        padding: 1rem;
+    .contenedor-reservas .formulario{
+        width: 80%;
+        justify-content: right;
+        margin-left: 12%;
         border-radius: 0;
-        display: flex;
-        align-items: center;
-        justify-content: end;
+        padding: 4rem 2rem;
     }
+
+    .formulario form{
+        width: 59%;
+        margin-bottom: 0;
+    }
+    
 }
 
 .contenedor-reservas .img-chef{
     position: absolute;
-    width: 180px;
-    position: absolute;
-    left: -3rem;
-    bottom: 0;
-    z-index: 1;
+    bottom: 10%;
+    left: -3%;
+    width: 43%;
+    height: auto;
 }
 
 @media (min-width: 768px){
     .contenedor-reservas .img-chef{
-        width: 60%;
-        right: 0;
-        bottom: 0;
-        left: -18%;
-        bottom: -.2rem;
-        z-index: 1;
+        position: absolute;
+        bottom: 11%;
+        left: 0;
+        width: 47%;
+        height: auto;
     }
 }
 
@@ -565,42 +592,21 @@ body{
         margin: 2rem 16rem 0 auto;
         
     }
-
-    .contenedor-reservas h2{
-        font-size: 4rem;
-        margin: 4rem auto 0 6rem;
-    }
 }
 
-.formulario form{
-    position: sticky;
-    z-index: 10;
-    width: 100%;
-    height: auto;
-    padding: 0 1.5rem;
-    margin-top: 2rem;
-}
 
-@media (min-width: 768px){
-    .formulario form{
-        width: 54%;
-        height: 100%;
-        margin-top: 2rem;
-        margin-right: 2rem;
-    }
-}
 form label{
     font-family: 'Poppins', sans-serif;
     margin-bottom: 7px;
     text-align: center;
-    font-size: 15px;
+    font-size: 17px;
     color: #611a00;
     font-weight: 400;
 }
 
 @media (min-width: 768px){
     form label{
-        font-size: 1.5rem;
+        font-size: 1.7rem;
     }
 }
 
@@ -613,6 +619,7 @@ form label{
 }
 
 .contenedor-textarea{
+    width: 90%;
     display: flex;
     flex-direction: column;
     align-items: flex-end;
@@ -634,31 +641,29 @@ form label{
 .seccion-input input,
 .contenedor-textarea textarea{
     font-family: 'Poppins', sans-serif;
-    border: none;
-    border-radius: 3px;
-    width: 100%;
     outline: none;
+    border-radius: 15px;
+    border: none;
+    font-size: 1.2rem;
+    padding: .5rem;
 }
 
 .seccion-input input{
     width: 100%;
     margin: 0 auto;
-    padding: .5rem;
-    font-size: 1.2rem;
 }
 
 .contenedor-textarea textarea{
     max-width: 250px;
     min-width: 200px;
     min-height: 70px;
-    font-size: 1.2rem;
-    padding: .5rem;
 }
 
 @media (min-width: 768px){
     .contenedor-input input{
         border-radius: 12px;
         padding-left: 10px;
+        padding: .8rem;
     }
     .contenedor-textarea textarea{
         display: block;
@@ -675,12 +680,13 @@ form label{
 .contenedor-textarea label{
     font-family: 'Poppins', sans-serif;
     display: block;
-    margin: 0 14% 10px 0;
+    margin: 0 3% 10px 0;
 }
 
 form button{
     display: block;
-    margin: 1rem 0 0 38%;
+    width: 50%;
+    margin: 1rem auto 0 42%;
     padding: .6rem 2rem;
     background-color: #681c00;
     color: #fff;
@@ -695,10 +701,11 @@ form button{
 
 @media (min-width: 768px){
     form button{
+        width: 70%;
         margin: 0 auto;
         font-size: 2.2rem;
         margin-top: 2rem;
-        padding: .7rem 3rem;
+        padding: .7rem 1rem;
         font-weight: 700;
     }
     .contenedor-textarea label{
@@ -707,15 +714,14 @@ form button{
 }
 
 .img-vegetales{
-    display: block;
     position: absolute;
-    bottom: 4rem;
+    bottom: 8rem;
     right: -4rem;
-    width: 600px;
+    width: 150%;
     transform: rotate(-15deg);
     transform: translateY(-50px);
     object-position: center center;
-    z-index: 0;
+    z-index: 1;
 }
 @media (min-width: 420px){
     .img-vegetales{
@@ -724,9 +730,28 @@ form button{
 }
 @media (min-width: 768px){
     .img-vegetales{
+        width: 110%;
         display: block;
-        bottom: -10rem;
-        right: -12rem;
-        width: 150%;
+        bottom: -4%;
+        right: -5%;
     }
 }
+
+footer{
+    background-color: #c95818;
+    margin: 0;
+    padding: 1rem .5rem;
+}
+
+footer img{
+    display: block;
+    width: 60px;
+    height: auto;
+    margin: 0 auto 1rem auto;
+}
+
+footer p{
+    color: white;
+    text-align: center;
+}
+

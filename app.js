@@ -20,10 +20,13 @@ function elementoPlato(plato) {
     platoDiv.innerHTML = `
     <div class="contenedor-img-plato">
         <img src='img/platos/plato_${plato.id}.jpg' alt="imagen de ${plato.nombre}">
+        <div class="plato-descripcion">
+            <h3>Pedir</h3>
+            <p>${plato.descripcion}</p>
+        </div>
     <div>
     <div class="textos-card">
         <p class="format-text" ><span class="titulo-plato">${plato.nombre}</span><span class="precio">$${plato.precio}</span></p>
-        <p class="plato-descripcion">${plato.descripcion}</p>
     </div>
     `
 
