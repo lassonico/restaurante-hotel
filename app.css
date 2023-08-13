@@ -446,8 +446,11 @@ body{
     border: 1px solid #f5f5f5;
 }
 
-.contenedor-img-plato:hover img:hover{
+.plato-descripcion h3:hover{
     cursor: pointer;
+}
+
+.card-plato .contenedor-img-plato:hover img{
     filter: brightness(20%);
 }
 
@@ -455,7 +458,6 @@ body{
     opacity: 1;
     bottom: 30%;
     left: 0;
-    cursor: pointer;
 }
 
 @media (min-width: 768px){
@@ -599,7 +601,7 @@ form label{
     font-family: 'Poppins', sans-serif;
     margin-bottom: 7px;
     text-align: center;
-    font-size: 17px;
+    font-size: 15px;
     color: #611a00;
     font-weight: 400;
 }

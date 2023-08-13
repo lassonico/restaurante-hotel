@@ -15,13 +15,15 @@ enlace.addEventListener('click', function(e){
 const carta = document.getElementById('menu')
 
 function elementoPlato(plato) {
+    
     const platoDiv = document.createElement('div');
+
     platoDiv.classList.add('card-plato');
     platoDiv.innerHTML = `
     <div class="contenedor-img-plato">
         <img src='img/platos/plato_${plato.id}.jpg' alt="imagen de ${plato.nombre}">
         <div class="plato-descripcion">
-            <h3>Pedir</h3>
+            <h3 class="pedir">Pedir</h3>
             <p>${plato.descripcion}</p>
         </div>
     <div>
@@ -29,14 +31,6 @@ function elementoPlato(plato) {
         <p class="format-text" ><span class="titulo-plato">${plato.nombre}</span><span class="precio">$${plato.precio}</span></p>
     </div>
     `
-
-    // <div class="card">
-    //     <div class="card-details">
-    //         <p class="text-title">Card title</p>
-    //         <p class="text-body">Here are the details of the card</p>
-    //     </div>
-    //     <button class="card-button">More info</button>
-    // </div>
 
     platoDiv.addEventListener('click', () => {
 
@@ -50,6 +44,11 @@ function elementoPlato(plato) {
 
     return platoDiv;
 }
+
+// const btnpedir = platoDiv.classList.contains('pedir')
+//     btnpedir.addEventListener('click', () => {
+//         console.log('clicaste')
+//     })
 
 function cargarPlatos() {
     platos.forEach(plato => {
@@ -84,4 +83,3 @@ formulario.addEventListener('submit', (e) => {
 
     window.scroll(0,0)
 })
-
