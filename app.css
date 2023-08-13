@@ -469,8 +469,8 @@ body{
     background-size: cover;
     background-position: center center;
     width: 100%;
-    height: 90vh;
-    padding: 2rem 10px;
+    height: 70vh;
+    padding: 1rem 1rem;
     margin-top: .2rem;
     overflow: hidden;
 }
@@ -482,6 +482,12 @@ body{
     }
 }
 
+@media (min-width:1250px){
+    .contenedor-reservas{
+        height: 135vh;
+    }
+}
+
 .formulario{
     background-color: #ffcc00;
     position: absolute;
@@ -489,20 +495,21 @@ body{
     right: 0;
     left: 0;
     width: 94%;
-    height: 40%;
+    height: auto;
     margin: 2rem auto 0 auto;
+    padding: 1rem;
     border-radius: 10px;
 }
 
 @media (min-width: 768px){
     .formulario{
         position: absolute;
-        bottom: 3rem;
+        bottom: 1rem;
         left: 5rem;
         right: 0;   
         width: 72%;
-        height: 50%;
         margin: 1rem auto 0 auto;
+        padding: 1rem;
         border-radius: 0;
         display: flex;
         align-items: center;
@@ -511,20 +518,20 @@ body{
 }
 
 .contenedor-reservas .img-chef{
+    position: absolute;
     width: 180px;
     position: absolute;
-    left: -39px;
+    left: -3rem;
     bottom: 0;
-    z-index: 10;
+    z-index: 1;
 }
 
 @media (min-width: 768px){
     .contenedor-reservas .img-chef{
-        width: 650px;
-        position: absolute;
+        width: 60%;
         right: 0;
         bottom: 0;
-        left: -21%;
+        left: -18%;
         bottom: -.2rem;
         z-index: 1;
     }
@@ -566,6 +573,7 @@ body{
 }
 
 .formulario form{
+    position: sticky;
     z-index: 10;
     width: 100%;
     height: auto;
@@ -575,9 +583,9 @@ body{
 
 @media (min-width: 768px){
     .formulario form{
-        width: 55%;
+        width: 54%;
         height: 100%;
-        margin-top: 6rem;
+        margin-top: 2rem;
         margin-right: 2rem;
     }
 }
@@ -627,7 +635,6 @@ form label{
 .contenedor-textarea textarea{
     font-family: 'Poppins', sans-serif;
     border: none;
-    padding: .9rem;
     border-radius: 3px;
     width: 100%;
     outline: none;
@@ -636,7 +643,7 @@ form label{
 .seccion-input input{
     width: 100%;
     margin: 0 auto;
-    padding: .5rem 0;
+    padding: .5rem;
     font-size: 1.2rem;
 }
 
@@ -645,6 +652,7 @@ form label{
     min-width: 200px;
     min-height: 70px;
     font-size: 1.2rem;
+    padding: .5rem;
 }
 
 @media (min-width: 768px){
@@ -659,7 +667,7 @@ form label{
         min-width: 100%;
         width: 100%;
         height: 120px;
-        font-size: 1.7rem;
+        font-size: 1.2rem;
         border-radius: 12px;
     }
 }
@@ -707,7 +715,7 @@ form button{
     transform: rotate(-15deg);
     transform: translateY(-50px);
     object-position: center center;
-    z-index: 1;
+    z-index: 0;
 }
 @media (min-width: 420px){
     .img-vegetales{
@@ -720,6 +728,5 @@ form button{
         bottom: -10rem;
         right: -12rem;
         width: 150%;
-        z-index: 2;
     }
 }
