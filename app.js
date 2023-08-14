@@ -16,8 +16,7 @@ const carta = document.getElementById('menu')
 
 function elementoPlato(plato) {
     
-    const platoDiv = document.createElement('div');
-
+    const platoDiv = document.createElement('div')
     platoDiv.classList.add('card-plato');
     platoDiv.innerHTML = `
     <div class="contenedor-img-plato">
@@ -44,11 +43,6 @@ function elementoPlato(plato) {
 
     return platoDiv;
 }
-
-// const btnpedir = platoDiv.classList.contains('pedir')
-//     btnpedir.addEventListener('click', () => {
-//         console.log('clicaste')
-//     })
 
 function cargarPlatos() {
     platos.forEach(plato => {
